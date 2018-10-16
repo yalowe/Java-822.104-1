@@ -42,7 +42,6 @@ fghij
 klmno
 pqrst
 uvwxy
-Click me to see the solution
 ```
 * Write a Java program to remove duplicate characters from a given string presents in another given string. 
 
