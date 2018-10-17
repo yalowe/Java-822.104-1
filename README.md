@@ -4,6 +4,10 @@
 ***
 #### Contact mail: anakarpf6@gmail.com
 ***
+<h4><a href="https://gist.github.com/AnnaKarpf/bdd64a84eb313a357b768e957d30f32a"> Useful links to our java group</a></h4>
+
+
+***
 <div id="quicktabs_tabpage__5" class="quicktabs_tabpage">
 
 
