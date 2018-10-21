@@ -22,7 +22,7 @@ public class Cat extends Pet{
 			return numOfHuntedSnakes;
 		}
 
-		public void setIsExtraBarking(int numOfHuntedSnakes) {
+		public void setNumOfHuntedSnakes(int numOfHuntedSnakes) {
 			this.numOfHuntedSnakes = (numOfHuntedSnakes>0)?numOfHuntedSnakes:0;
 		}
 		
