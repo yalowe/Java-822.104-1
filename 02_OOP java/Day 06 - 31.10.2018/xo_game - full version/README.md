@@ -100,7 +100,8 @@ public class Game {
 Properties:
 * `char[][] matrix=new char[3][3];` - a matrix that reprepsents the game board, every element in this matrix will contain 0 as a default value;
 * `boolean firstPlayerTurn=true;` - this property will contain the boolean value that decideds if the current turn is the 'first player' turn  or the 'second player' turn 
-* `boolean gameOver=false;` - this property will contain a boolean value that shows if the game is over or not 
+* `boolean gameOver=false;` - this property will contain a boolean value that shows if the game is over or not   
+
 Methods:
 * `getMatrixFormat` -this function returns a string (to print in the console), that contains the state of the current board
     ```java
@@ -133,7 +134,9 @@ Methods:
     The function will return false in the follwing cases:
     * If the location is out of range
     * If the element in the location is allready taken
-    * If the user did not win
+    * If the user did not win   
+    
+    
     The function will return true in the follwing cases:
     * If the user won
 ```java
