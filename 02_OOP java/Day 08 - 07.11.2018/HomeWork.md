@@ -1,7 +1,7 @@
 
 ## Create a `Task` class:
 #### Properties:
-* taskContent - <T>
+* taskContent - `<T>`
 * taskDuration - int
 
 
