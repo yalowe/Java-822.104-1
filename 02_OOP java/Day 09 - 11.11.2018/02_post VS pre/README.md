@@ -26,7 +26,7 @@ int num;
 
 ```java
 int num;
-++num;
+num++;
 ```
 
 </td>
@@ -37,19 +37,19 @@ int num;
 <td>
 
 ```java
-	int n1=0;
-	int n2=0;
+int n1=0;
+int n2=0;
 		
-	n2=n2+1;
-	n1=n2;
+n2=n2+1;
+n1=n2;
 ```
 is equal to:
 
 ```java
-	int n1=0;
-	int n2=0;
+int n1=0;
+int n2=0;
 		
-	n1=++n2;
+n1=++n2;
 ```
 
 </td>
@@ -57,19 +57,19 @@ is equal to:
 
 
 ```java
-	int n1=0;
-	int n2=0;
+int n1=0;
+int n2=0;
 		
-	n1=n2;
-    n2=n2+1;
+n1=n2;
+n2=n2+1;
 ```
 is equal to:
 
 ```java
-	int n1=0;
-	int n2=0;
+int n1=0;
+int n2=0;
 		
-	n1=n2++;
+n1=n2++;
 ```
 
 
