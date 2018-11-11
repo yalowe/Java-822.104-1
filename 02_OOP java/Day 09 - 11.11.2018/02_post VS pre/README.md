@@ -76,3 +76,45 @@ n1=n2++;
 </td>
 </tr>
 </table>
+
+
+### Example of code:
+```java
+public class App {
+
+	public static void main(String[] args) {
+	 		
+		
+		int num=0;
+
+        //--------post-----------
+		System.out.print(num++);
+
+        //--------pre-----------
+		System.out.print(++num);
+	}
+
+}
+```
+is equal to:
+```java
+public class App {
+
+	public static void main(String[] args) {
+	 		
+		
+		int num=0;
+
+        //--------post-----------
+		System.out.print(num);
+        num=num+1;
+
+
+        //--------pre-----------
+        num=num+1;
+		System.out.print(num);
+	}
+
+}
+```
+
