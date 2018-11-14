@@ -1,4 +1,4 @@
-// T - is a type (for example: T can be int, etc...)
+// T - is a type (for example: T can be Integer,String, etc...)
 public class Tester<T> {
 	
 	public T prop;
