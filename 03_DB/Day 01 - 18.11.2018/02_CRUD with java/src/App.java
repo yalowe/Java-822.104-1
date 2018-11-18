@@ -7,12 +7,12 @@ import java.sql.Statement;
 
 public class App {
 
-	// ξηψεζϊ δξϊΰψϊ διλο ξργ δπϊεπιν πξφΰ:
+	// ΧΧ—Χ¨Χ•Χ–Χª Χ”ΧΧªΧΧ¨Χª Χ”Χ™Χ›Χ ΧΧ΅Χ“ Χ”Χ ΧªΧ•Χ Χ™Χ Χ ΧΧ¦Χ:
 	private static String connectionString = "jdbc:derby://localhost:3301/JBDB;create=true";
 	
 	
 	
-	//-------------------------ιφιψϊ θαμδ-----------------------------
+	//-------------------------Χ™Χ¦Χ™Χ¨Χª ΧΧ‘ΧΧ”-----------------------------
 	public static void buildDB() {
 		
 		// If JohnBryceDB already exist, there will be an exception.
@@ -24,17 +24,17 @@ public class App {
 			
 		
 			
-			//δβγψϊ δωΰιμϊΰ αϊεψ ξηψεζϊ τωεθδ
+			//Χ”Χ’Χ“Χ¨Χª Χ”Χ©ΧΧ™ΧΧªΧ Χ‘ΧªΧ•Χ¨ ΧΧ—Χ¨Χ•Χ–Χª Χ¤Χ©Χ•ΧΧ”
 			String sql = "create table Products (" +
 				"id integer not null primary key generated always as identity(start with 1, increment by 1), " +
 				"name varchar(50) not null, " +
 				"price double not null)";
 			
 			
-			// ΰεαιιχθ δξϊΰψ τχεγδ μαιφες ςμ ξργ δπϊεπιν
+			// ΧΧ•Χ‘Χ™Χ™Χ§Χ Χ”ΧΧªΧΧ¨ Χ¤Χ§Χ•Χ“Χ” ΧΧ‘Χ™Χ¦Χ•ΧΆ ΧΆΧ ΧΧ΅Χ“ Χ”Χ ΧªΧ•Χ Χ™Χ
 			Statement statement = connection.createStatement();
 			
-			// αφς ΰϊ δωΰιμϊδ δπ"μ
+			// Χ‘Χ¦ΧΆ ΧΧª Χ”Χ©ΧΧ™ΧΧªΧ” Χ”Χ "Χ
 			statement.executeUpdate(sql);
 			
 			System.out.println("Products table has been created.");			
@@ -45,7 +45,7 @@ public class App {
 	}
 	
 	
-	//-------------------------δλπρϊ πϊεπιν μθαμδ-----------------------------
+	//-------------------------Χ”Χ›Χ Χ΅Χª Χ ΧªΧ•Χ Χ™Χ ΧΧΧ‘ΧΧ”-----------------------------
 	public static void insert(String name, double price) throws SQLException {
 		
 		// Create a connection: 
@@ -73,7 +73,7 @@ public class App {
 		
 	
 	
-	//-------------------------χψιΰϊ πϊεπιν ξδθαμδ-----------------------------
+	//-------------------------Χ§Χ¨Χ™ΧΧª Χ ΧªΧ•Χ Χ™Χ ΧΧ”ΧΧ‘ΧΧ”-----------------------------
 	public static void readAll() throws SQLException {
 		
 		// Create a connection: 
@@ -104,7 +104,7 @@ public class App {
 	
 	
 	
-	//-------------------------ςιγλεο πϊεπιν αθαμδ-----------------------------
+	//-------------------------ΧΆΧ™Χ“Χ›Χ•Χ Χ ΧªΧ•Χ Χ™Χ Χ‘ΧΧ‘ΧΧ”-----------------------------
 	public static void update(int id, String name, double price) throws SQLException {
 		
 		// Create a connection: 
@@ -123,7 +123,7 @@ public class App {
 	
 	
 	
-	//-------------------------ξηιχϊ πϊεπιν ξδθαμδ-----------------------------
+	//-------------------------ΧΧ—Χ™Χ§Χª Χ ΧªΧ•Χ Χ™Χ ΧΧ”ΧΧ‘ΧΧ”-----------------------------
 	public static void delete(int id) throws SQLException {
 		
 		// Create a connection: 
@@ -147,8 +147,8 @@ public class App {
 		
 		try {
 			
-			// δεψΰδ μβ'ΰεεδ μδλιψ ΰϊ δγψιιαψ ωμ γψαι
-			// γψιιαψ δεΰ ξπβπεο δδϊηαψεϊ μξργ δπϊεπιν
+			// Χ”Χ•Χ¨ΧΧ” ΧΧ’'ΧΧ•Χ•Χ” ΧΧ”Χ›Χ™Χ¨ ΧΧª Χ”Χ“Χ¨Χ™Χ™Χ‘Χ¨ Χ©Χ Χ“Χ¨Χ‘Χ™
+			// Χ“Χ¨Χ™Χ™Χ‘Χ¨ Χ”Χ•Χ ΧΧ Χ’Χ Χ•Χ Χ”Χ”ΧªΧ—Χ‘Χ¨Χ•Χª ΧΧΧ΅Χ“ Χ”Χ ΧªΧ•Χ Χ™Χ
 			Class.forName("org.apache.derby.jdbc.ClientDriver");
 	
 			buildDB();
