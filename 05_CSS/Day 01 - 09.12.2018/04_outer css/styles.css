@@ -1,0 +1,15 @@
+﻿/*tag selector - no prefix*/
+p {
+    color: red;
+    text-decoration: underline;
+}
+
+/*class selector - . as prefix*/
+.c1 {
+    background-color: yellow;
+}
+
+/*id selector - # as prefix*/
+#p2 {
+    background-color: aqua;
+}

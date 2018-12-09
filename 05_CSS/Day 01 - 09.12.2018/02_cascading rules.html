@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+
+    <style>
+        /*id selector - # as prefix*/
+
+        #p2 {
+            background-color: aqua;
+            color: greenyellow;
+        }
+
+
+        /*tag selector - no prefix*/
+
+        p {
+            color: red;
+            text-decoration: underline;
+        }
+
+        /*class selector - . as prefix*/
+
+        /* פעם ראשונה של הגדרת העיצוב למחלקה הזו - היא תדרס על ידי העיצוב השני*/
+
+        .c1 {
+            background-color: yellow;
+            color: green;
+        }
+
+
+
+        /*class selector - . as prefix*/
+
+        /* פעם שניה של הגדרת העיצוב למחלקה הזו - היא זו שתקבע את העיצוב*/
+
+        .c1 {
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <p id="p1" class="c1">line 1</p>
+    <p id="p2" style="background-color:magenta;">line 2</p>
+    <p id="p3" class="c1">line 3</p>
+</body>
+
+</html>
