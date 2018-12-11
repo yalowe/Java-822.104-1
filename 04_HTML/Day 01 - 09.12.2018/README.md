@@ -18,3 +18,13 @@ such as: `notepad++`, `visual studio code`
 # Download to your computer:
 * Node - https://nodejs.org/en/
 * Visual studio code - https://code.visualstudio.com/download
+
+
+# Links to exercise html-css-js:
+* https://www.w3resource.com/html-css-exercise/
+* https://www.w3resource.com/javascript-exercises/
+
+# Links to basic tutorials:
+* https://www.w3schools.com/html/
+* https://www.w3schools.com/css/
+* https://www.w3schools.com/js/
