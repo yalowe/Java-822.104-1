@@ -11,6 +11,8 @@ var num:number=Math.floor(Math.random()*200);
 ```
 
 <div dir="rtl">
+   
+   
 צרו מערך מסוג number[] בגודל 10, הכניסו לתוכו מספרים רנדומליים, כל מספר בין 0 ל-200 והציגו: 
 * את המערך.
 * את סכום המספרים.
@@ -30,4 +32,6 @@ var num:number=Math.floor(Math.random()*200);
 
 
 בהצלחה!!!
+
+
 </div>
