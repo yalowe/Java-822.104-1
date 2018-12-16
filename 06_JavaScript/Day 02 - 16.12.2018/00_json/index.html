@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script>
+
+
+        /*
+        JSON -> Java Script Object Notation
+        we open a block
+        in the block we add pairs (seperated by ,)
+        everty pair contains:
+            1) key - can be a string
+            2) value - can be any type (number, string, array, json. etc..)
+       */
+        var p = {
+            "name": "Bob",
+            "age": 13,
+            "is male": true,
+            "hobbies": ["Math", "Computers"],
+            "address": {
+                "city": "Tel Aviv",
+                "country": "Israel"
+            }
+        };
+
+        console.log("name", p.name);                //--> name Bob
+        console.log("name", p["name"]);             //--> name Bob
+
+        console.log("is male", p["is male"]);       //--> is male true
+
+
+        var myKey = "age";
+        console.log("age", p[myKey]);               //--> age 13
+
+
+        //this is the way to loop over all the keys in a json
+        for (var x in p) {
+            console.log(x);
+        }
+
+
+        //this is the way to loop over all the keys and the values in a json
+        for (var x in p) {
+            console.log(x, p[x]);
+        }
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
