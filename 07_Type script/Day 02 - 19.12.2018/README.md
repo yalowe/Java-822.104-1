@@ -1,4 +1,4 @@
-# Important points to rember in ts:
+# Important points to remember in ts:
 * Class name starts with a capital letter
 * The constructor is defined with the built-in word: `constructor`
 * If we do not define an access modifier - by default it is `public`
