@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script>
+
+        // WAY 1 : JSON (SINGLETON) 
+        var obj = {
+            "name": "Bob",
+            "age": 50
+        };
+
+        console.log(obj.name, obj.age);  //--> Bob 50
+
+
+
+        // WAY 2 : CONSTRUCTOR FUNCTION
+        function Animal() {
+            this.name = "Bob";
+            this.age = 50;
+        }
+
+        var animal1 = new Animal();
+        console.log(animal1.name, animal1.age);  //--> Bob 50
+
+
+
+        // WAY 3 : SIMPLE CLASS
+        class Cat {
+            constructor() {
+                this.name = "Bob";
+                this.age = 50;
+            }
+        }
+
+        var cat1 = new Cat();
+        console.log(cat1.name, cat1.age);  //--> Bob 50
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
