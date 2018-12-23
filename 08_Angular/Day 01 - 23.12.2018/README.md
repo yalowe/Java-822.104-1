@@ -61,6 +61,18 @@ npm i
 ```
 
 
+# Export / Import
+* To import from `node_modules/@angular/core`
+```
+import { Component } from '@angular/core';
+```
+
+* If we have `./` - it shows that the file is in the current directory
+```
+import { AppComponent } from './app.component';
+```
+
+
 
 
 
