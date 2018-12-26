@@ -1,0 +1,29 @@
+<!-- 
+  we can access the properties / functions 
+  that are in the class - with {{}} 
+  NOTE: access only public properties / functions
+-->
+
+<h1>Hello {{firstName}}</h1>
+
+
+<p *ngIf="isMale">{{firstName}} is male</p>
+<p *ngIf="!isMale">{{firstName}} is female</p>
+
+
+<hr/>
+<h3>hobbies by index:</h3>
+<ul>
+  <li>{{hobbies[0]}}</li>
+  <li>{{hobbies[1]}}</li>
+</ul>
+
+
+
+<hr/>
+<h3>hobbies by ngFor:</h3>
+<ul>
+  <li *ngFor="let y of hobbies">{{y}}</li>
+</ul>
+
+<p> &copy; {{getYear()}}</p>
