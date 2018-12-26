@@ -1,0 +1,19 @@
+<table border="1">
+  <tr>
+    <th>first_name</th>
+    <th>last_name</th>
+    <th>avatar</th>
+    <th>select</th>
+  </tr>
+
+  <tr *ngFor="let p of arr">
+    <td>{{p.first_name}}</td>
+    <td>{{p.last_name}}</td>
+    <td><img [src]="p.avatar"/></td>
+    <td><button (click)="setPerson(p.first_name)">choose me</button></td>
+  </tr>
+</table>
+
+
+
+<p>Selected person: {{person}}</p>
