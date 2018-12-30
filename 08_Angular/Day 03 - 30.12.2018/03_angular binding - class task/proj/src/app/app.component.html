@@ -1,0 +1,20 @@
+<h1>Our TODO app</h1>
+
+<label>Enter a number (0-10):</label>
+<input type="number" [(ngModel)]="selectedLength"/>
+
+<button (click)="setNewLength()">show only this items</button>
+<hr>
+<h3>Todo items:</h3>
+
+<ol>
+  <li *ngFor="let t of filterList">
+    <ul>
+      <li> userId : {{t.userId }}</li>
+      <li> id : {{t.id }}</li>
+      <li> title : {{t.title }}</li>
+      <li> completed : {{t.completed }}</li>
+    </ul>
+  </li>
+</ol>
+
