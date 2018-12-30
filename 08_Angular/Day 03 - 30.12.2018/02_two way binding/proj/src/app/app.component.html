@@ -1,0 +1,35 @@
+<h1 title="test title">Welcome to our app</h1>
+
+<div>
+  <label>Name:</label>
+
+  <!-- [] and () - TWO WAY BINDING -->
+  <!-- NOTE: '#' in html tag - is to refernce a specific element by the ts code only in this html page-->
+  <input type="text" #x [value]="userName" (keyup)="updateName(x.value)" />
+</div>
+
+
+<div>
+
+  <label>Age:</label>
+
+  <!-- [(ngModel)] - TWO WAY BINDING -->
+  <!-- NOTE: to use [(ngModel)]  add 'FormsModule' to the 'imports' array , in 'app.module.ts'-->
+  <input type="number" [(ngModel)]="userAge" />
+</div>
+
+
+<hr/>
+
+<!-- () - ONE WAY BINDING - HTML TO TS -->
+<button (click)="incAge()">Increment age</button>
+
+<hr/>
+
+
+<!-- {{}} or [] - ONE WAY BINDING - TS TO HTML -->
+<p [title]="userName">
+  Welcome {{userName}}, you are {{userAge}} years old
+</p>
+
+

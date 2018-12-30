@@ -1,0 +1,34 @@
+<h1>
+  movie-list:
+</h1>
+
+
+<ol class="rounded-list">
+  <li *ngFor="let m of movieArr" (click)="setMovie(m)">
+
+
+    <!-- "javascript:void(0)" is to prevent a link from redirecting -->
+      <a href="javascript:void(0)">{{m.movie_name}}</a>
+      
+    </li>
+</ol>
+
+<div *ngIf="selctedMovie!=undefined">
+  <p>Selected movie: {{selctedMovie.movie_name}}</p>
+
+
+  <table border="1">
+    <tr>
+      <th>Country</th>
+      <th>Price</th>
+      <th>Date</th>
+    </tr>
+
+
+    <tr>
+      <td>USA</td>
+      <td>{{selctedMovie.price}}</td>
+      <td>{{selctedMovie.movie_date}}</td>
+    </tr>
+  </table>
+</div>
