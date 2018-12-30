@@ -61,14 +61,15 @@
     "id": 10,
     "title": "illo est ratione doloremque quia maiores aut",
     "completed": true
-  },
+  }
+  ]
   ```
 * Create a new angular app
 * In the app - add a matching interface to the given list
-* In the `app-component` add to the htnl a preview of all the TODO's items
+* In the `app-component` add to the html a preview of all the TODO's items
 * Add to the `app-component` an input tag (with `number` type)
 * The default value of this input tag - will be the length of the TODO list (10 elements)
 * When the user clicks on the "show only this items"  button - the preview of all the TODO's items will show only the first items (according to the user's input)
 * Use this mockup:   
-<br/>
+<br>
 ![picture](screen.png)
