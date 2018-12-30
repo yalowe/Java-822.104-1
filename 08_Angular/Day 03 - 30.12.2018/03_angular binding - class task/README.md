@@ -70,6 +70,8 @@
 * Add to the `app-component` an input tag (with `number` type)
 * The default value of this input tag - will be the length of the TODO list (10 elements)
 * When the user clicks on the "show only this items"  button - the preview of all the TODO's items will show only the first items (according to the user's input)
-* Use this mockup:   
-<br>
+* Use this mockup:      
+   
+      
+      
 ![picture](screen.png)
