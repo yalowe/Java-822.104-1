@@ -1,0 +1,14 @@
+<h1>Veg &amp; fruits app</h1>
+
+
+<div>
+  <label>enter a char:</label>
+  <input type="text" [(ngModel)]="search">
+  <p *ngIf="search.length>1">Please enter only 1 char</p>
+  <button (click)="setSearch()">search now</button>
+</div>
+
+
+<ul>
+  <li *ngFor="let x of vegTempArray">{{x}}</li>
+</ul>

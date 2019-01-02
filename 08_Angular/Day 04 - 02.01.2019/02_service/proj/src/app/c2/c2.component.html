@@ -1,0 +1,11 @@
+<h2>Select your country:</h2>
+
+
+<select [(ngModel)]="selected">
+  <option *ngFor="let x of countryList" value="{{x.name}}"> 
+    {{x.name}} 
+  </option>
+</select>
+
+
+<button (click)="setSelcted()">Save country</button>
