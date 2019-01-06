@@ -1,0 +1,24 @@
+<h3>
+    edit user:
+</h3>
+
+<p>id:</p>
+<input type="text" [(ngModel)]="editUser.id" />
+
+<p>name:</p>
+<input type="text" [(ngModel)]="editUser.name" />
+
+
+<p>job:</p>
+<input type="text" [(ngModel)]="editUser.job" />
+
+<br><br>
+
+<button (click)="updateUser()">edit user</button>
+
+
+<div *ngIf="myWrapperObject.putData">
+    <h3>User update successfully</h3>
+    <p>name: {{myWrapperObject.putData.name}}</p>
+    <p>updatedAt: {{myWrapperObject.putData.updatedAt}}</p>
+</div>
