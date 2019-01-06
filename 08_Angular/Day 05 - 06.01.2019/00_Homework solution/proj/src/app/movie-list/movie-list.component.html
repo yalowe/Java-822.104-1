@@ -1,0 +1,14 @@
+<h1>
+  movie-list:
+</h1>
+
+
+<ol class="rounded-list">
+  <li *ngFor="let m of movieArr" (click)="setMovie(m)">
+
+
+    <!-- "javascript:void(0)" is to prevent a link from redirecting -->
+      <a href="javascript:void(0)">{{m.movie_name}}</a>
+      
+    </li>
+</ol>

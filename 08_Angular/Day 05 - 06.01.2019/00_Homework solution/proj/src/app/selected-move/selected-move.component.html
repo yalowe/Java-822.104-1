@@ -1,0 +1,20 @@
+
+<div *ngIf="myMovieInfo && myMovieInfo.selected">
+  <p>Selected movie: {{myMovieInfo.selected.movie_name}}</p>
+
+
+  <table border="1">
+    <tr>
+      <th>Country</th>
+      <th>Price</th>
+      <th>Date</th>
+    </tr>
+
+
+    <tr>
+      <td>USA</td>
+      <td>{{myMovieInfo.selected.price}}</td>
+      <td>{{myMovieInfo.selected.movie_date}}</td>
+    </tr>
+  </table>
+</div>
