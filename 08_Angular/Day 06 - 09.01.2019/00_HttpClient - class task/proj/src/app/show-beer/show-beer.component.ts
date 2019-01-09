@@ -4,7 +4,7 @@ import { BeerService } from '../shared/services/beer.service';
 @Component({
   selector: 'app-show-beer',
   templateUrl: './show-beer.component.html',
-  styleUrls: ['./show-beer.component.css']
+  styleUrls: []
 })
 export class ShowBeerComponent implements OnInit {
 
