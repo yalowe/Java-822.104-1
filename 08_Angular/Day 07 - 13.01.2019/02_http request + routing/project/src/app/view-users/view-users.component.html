@@ -1,0 +1,18 @@
+<h3>
+    get users:
+</h3>
+
+<table border="1" *ngIf="myWrapperObject.getData && myWrapperObject.getData.data">
+    <tr>
+        <th>id</th>
+        <th>first_name</th>
+        <th>last_name</th>
+        <th>avatar</th>
+    </tr>
+    <tr *ngFor="let u of myWrapperObject.getData.data">
+        <td>{{u.id}}</td>
+        <td>{{u.first_name}}</td>
+        <td>{{u.last_name}}</td>
+        <td><img [src]="u.avatar" /></td>
+    </tr>
+</table>

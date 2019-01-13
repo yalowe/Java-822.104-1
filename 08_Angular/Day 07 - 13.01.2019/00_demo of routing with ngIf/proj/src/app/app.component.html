@@ -1,0 +1,13 @@
+
+<button (click)="setState('Home')">Home</button>
+<button (click)="setState('Contact')">Contact</button>
+<hr/>
+
+
+<div *ngIf="currentState=='Home'">
+    <app-home></app-home>
+</div>
+
+<div *ngIf="currentState=='Contact'">
+    <app-contact></app-contact>
+</div>
