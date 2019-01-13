@@ -13,6 +13,7 @@
 * Part 5 - 
   * seperate the project to different packages
   * add to each class + function `javadoc` comments
-  * generate html `javadoc` pages - and convert them to md pages
+  * generate html `javadoc` pages - and convert them to md pages   
+  
    13/01/2019 - 16/01/2019
 ### Good Luck
