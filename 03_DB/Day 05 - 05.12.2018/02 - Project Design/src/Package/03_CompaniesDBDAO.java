@@ -147,36 +147,7 @@ public class CompaniesDBDAO implements CompaniesDAO {
 		}
 	}
 
-	public Company getOneCompany(int companyID) throws Exception {
-
-		Connection connection = null;
-
-		try {
-			connection = connectionPool.getConnection();
-
-			String sql = String.format("SELECT * FROM COMPANIES WHERE ID=%d", companyID);
-
-			try(PreparedStatement preparedStatement = connection.prepareStatement(sql)) {
-
-				try(ResultSet resultSet = preparedStatement.executeQuery()) {
-
-					resultSet.next();
-
-					String name = resultSet.getString("NAME");
-					String email = resultSet.getString("EMAIL");
-					String password = resultSet.getString("PASSWORD");
-					ArrayList<Coupon> coupons = getCouponsByCompanyID(companyID);
-
-					Company company = new Company(companyID, name, email, password, coupons);
-
-					return company;
-				}
-			}
-		}
-		finally {
-			connectionPool.restoreConnection(connection);
-		}
-	}
+	
 
 }
 
