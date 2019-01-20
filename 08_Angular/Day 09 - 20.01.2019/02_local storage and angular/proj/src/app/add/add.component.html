@@ -1,0 +1,13 @@
+<h1>Add new TODO item</h1>
+<div>
+  <label>task Content</label>
+  <input type="text" [(ngModel)]="todoItem.taskContent"/>
+</div>
+<div>
+    <label>task Duration</label>
+    <input type="number" [(ngModel)]="todoItem.taskDuration"/>
+  </div>
+
+
+
+<button (click)="addTaskToLocal()">Add item</button>

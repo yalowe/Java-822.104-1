@@ -1,0 +1,14 @@
+<h1>All TODO items</h1>
+
+<table border="1">
+  <tr>
+    <th>taskContent</th>
+    <th>taskDuration</th>
+  </tr>
+
+
+  <tr *ngFor="let x of todoList">
+    <td>{{x.taskContent}}</td>
+    <td>{{x.taskDuration}}</td>
+  </tr>
+</table>
