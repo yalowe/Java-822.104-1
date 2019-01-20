@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script>
+
+
+        /*
+        local storage - is saved also after closing the tab
+        session storage - is saved only while the tab is open
+        */
+        function saveLocal() {
+            let name = document.getElementById("myname").value;
+            let age = document.getElementById("myage").value;
+
+            let obj = {
+                "name": name,
+                "age": age
+            };
+
+
+            let oldList = getLocal();
+
+
+            if (oldList == null) {
+                oldList = [];
+            }
+
+
+            oldList.push(obj);
+
+            let strObj = JSON.stringify(oldList);
+            localStorage.setItem("people", strObj);
+        }
+
+
+
+        function showAll() {
+            let oldList = getLocal();
+
+
+            if (oldList != null) {
+                let str = "";
+                for (let i = 0; i < oldList.length; i++) {
+                    str += "<p> name: " + oldList[i].name + " , age: " + oldList[i].age + "</p>";
+                }
+
+                document.getElementById("res").innerHTML = str;
+
+            }
+        }
+
+        function getLocal() {
+            let resStr = localStorage.getItem("people");
+            let resObj = JSON.parse(resStr);
+            return resObj;
+        }
+
+    </script>
+</head>
+
+<body>
+
+
+    <h1>Add new person</h1>
+    <div>
+        <lable>Name:</lable>
+        <input type="text" id="myname" />
+    </div>
+    <div>
+        <lable>Age:</lable>
+        <input type="number" id="myage" />
+    </div>
+
+    <button onclick="saveLocal()">
+        save person
+    </button>
+
+
+
+    <h1>Get old item</h1>
+
+    <button onclick="showAll()">
+        get all people
+    </button>
+
+
+    <div id="res"></div>
+
+
+
+
+
+</body>
+
+</html>

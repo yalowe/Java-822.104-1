@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script>
+
+
+        /*
+        local storage - is saved also after closing the tab
+        session storage - is saved only while the tab is open
+        */
+        function saveLocal() {
+            let key = document.getElementById("mykey").value;
+            let val = document.getElementById("myval").value;
+            localStorage.setItem(key, val);
+        }
+
+
+        function getLocal() {
+            let key = document.getElementById("myoldkey").value;
+            let res = localStorage.getItem(key);
+            alert(res);
+        }
+
+
+        function resetLocal(){
+            localStorage.clear();
+        }
+
+    </script>
+</head>
+
+<body>
+
+
+    <h1>Add new item</h1>
+    <div>
+        <lable>Key:</lable>
+        <input type="text" id="mykey" />
+    </div>
+    <div>
+        <lable>Value:</lable>
+        <input type="text" id="myval" />
+    </div>
+
+    <button onclick="saveLocal()">
+        save as Local
+    </button>
+
+
+
+    <h1>Get old item</h1>
+    <div>
+        <lable>Key:</lable>
+        <input type="text" id="myoldkey" />
+    </div>
+
+    <button onclick="getLocal()">
+        get Local value
+    </button>
+
+
+
+    <h1>Reset local</h1>
+    <button onclick="resetLocal()">
+        reset Local storage
+    </button>
+
+</body>
+
+</html>
