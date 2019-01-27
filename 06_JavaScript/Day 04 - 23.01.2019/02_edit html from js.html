@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script>
+        function func() {
+
+            // ById - returns only one element (or null - if element is not defined)
+            let x1 = document.getElementById("test");
+            x1.style.backgroundColor = "#FF0000";
+
+
+
+            // ByClassName - returns array with all the matching elements (or emty array - if no matching elements)
+            let x2 = document.getElementsByClassName("c");
+            for (let i = 0; i < x2.length; i++)
+                x2[i].style.backgroundColor = "#00FF00";
+
+        }
+    </script>
+</head>
+
+<body onload="func()">
+    <p id="test">line 1</p>
+    <p class="c">line 2</p>
+    <p class="c" name="n">line 3</p>
+</body>
+
+</html>

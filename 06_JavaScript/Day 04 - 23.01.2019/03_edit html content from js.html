@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script>
+        function func() {
+
+            let x1 = document.getElementById("test1");
+            x1.innerHTML = "<b>change 1</b>";
+
+            let x2 = document.getElementById("test2");
+            x2.outerHTML = "<b>change 2</b>";
+
+
+            let x3 = document.getElementById("test3");
+            x3.innerText = "<b>change 3</b>";
+
+
+            let x4 = document.getElementById("test4");
+            x4.outerText = "<b>change 4</b>";
+
+
+        }
+    </script>
+</head>
+
+<body>
+    <h1 id="test1">line 1</h1>
+    <h1 id="test2">line 2</h1>
+    <h1 id="test3">line 3</h1>
+    <h1 id="test4">line 4</h1>
+
+
+
+    <button onclick="func()">click me</button>
+</body>
+
+</html>
