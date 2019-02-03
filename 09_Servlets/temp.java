@@ -17,7 +17,7 @@ public class ConnectionPool {
 	private static String USERNAME = "root";
 	private static String PASSWORD = null;
 	private static String DRIVER = "com.mysql.jdbc.Driver";
-	private static String URL = "jdbc:mysql://localhost:3306/bookStore";
+	private static String URL = "jdbc:mysql://localhost:3306/School";
 	
 	
 
