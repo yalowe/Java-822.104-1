@@ -1,0 +1,15 @@
+<h1>Get grade of single student</h1>
+<label>Enter name:</label>
+<select [(ngModel)]="firstName">
+  <option *ngFor="let s of myLocalData.students">{{s.name}}</option>
+</select>
+
+
+<br/>
+
+<button (click)="getGrade()">Get grade</button>
+
+
+<div *ngIf="myLocalData.student">
+  <p>Student {{myLocalData.student.name}} has grade: {{myLocalData.student.grade}}</p>
+</div>

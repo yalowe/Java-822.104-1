@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script>
+
+        /*
+        If we run this page in chrome, we get this error: blocked by CORS policy
+        ------
+        If we run in this way:
+            cd C:\Program Files (x86)\Google\Chrome\Application
+            chrome.exe --user-data-dir="C:/Chrome dev session" --disable-web-security
+        it works fine
+        */
+        fetch("http://localhost:8080/00_Full_student_project/StudentServlet")
+            .then(x => x.json()).then(y => console.log(y));
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

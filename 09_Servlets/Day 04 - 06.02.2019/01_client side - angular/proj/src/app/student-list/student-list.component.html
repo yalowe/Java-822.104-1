@@ -1,0 +1,18 @@
+<h1>Student list:</h1>
+
+
+<table border="1">
+  <tr>
+    <th>id</th>
+    <th>name</th>
+    <th>age</th>
+    <th>grade</th>
+  </tr>
+
+  <tr *ngFor="let s of myLocalData.students">
+    <td>{{s.id}}</td>
+    <td>{{s.name}}</td>
+    <td>{{s.age}}</td>
+    <td>{{s.grade}}</td>
+  </tr>
+</table>
