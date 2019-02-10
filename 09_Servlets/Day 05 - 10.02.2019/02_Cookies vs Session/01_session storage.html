@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script>
+        function setSession(){
+            var userName=prompt("Enter your name");
+            sessionStorage.setItem("userName",userName);
+        }
+
+
+         function setLocal(){
+            var userAge=prompt("Enter your age");
+            localStorage.setItem("userAge",userAge);
+        }
+    </script>
+</head>
+
+<body>
+    <button onclick="setSession()">set session</button>
+    <button onclick="setLocal()">set local</button>
+</body>
+
+</html>
