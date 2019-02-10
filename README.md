@@ -12,6 +12,8 @@
 <h4><a href="https://trinket.io/java">Java Editor<a></h4>
   
 ***
+[link to lessons video](https://drive.google.com/open?id=1gQlgqDExwpU3gUUBu2OhPkHn8NId3rG6)
+***
 <div id="quicktabs_tabpage__5" class="quicktabs_tabpage">
 
 
