@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" version="3.1">
+	
+	<servlet>
+	
+		<!-- Mandatory - some servlet name: -->
+		<servlet-name>Northwind REST</servlet-name>
+
+		<!-- Mandatory: -->	
+		<servlet-class>com.sun.jersey.spi.container.servlet.ServletContainer</servlet-class>
+		
+		<init-param>
+
+			<!-- Mandatory: -->	
+			<param-name>com.sun.jersey.config.property.packages</param-name>
+	
+			<!-- Mandatory - our package: -->	
+			<param-value>johnbryce</param-value>
+			
+		</init-param>
+		
+	</servlet>
+
+	<servlet-mapping>
+
+		<!-- Mandatory - the exact servlet name as above: -->	
+		<servlet-name>Northwind REST</servlet-name>
+
+		<!-- Mandatory - main url of the REST service. e.g.: 
+			 <url-pattern>/api/*</url-pattern> will cause the route to be: http://localhost:8080/Northwind/api/products/Apple/3.5 
+			 <url-pattern>/*</url-pattern> will cause the route to be: http://localhost:8080/Northwind/products/Apple/3.5 -->	
+		<url-pattern>/*</url-pattern>
+		
+	</servlet-mapping>
+
+</web-app>
